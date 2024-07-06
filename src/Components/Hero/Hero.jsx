@@ -8,7 +8,7 @@ const Hero = () => {
     <div className="hero container">
       <div className="hero-text">
         <h1>
-          We Ensure Education for a
+          We Ensure Education for
           <Typewriter
             options={{
               strings: ["Better World"],

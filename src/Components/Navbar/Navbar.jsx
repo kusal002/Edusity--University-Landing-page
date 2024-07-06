@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
 import menu_icon from "../../assets/menu-icon.png";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -20,14 +21,42 @@ const Navbar = () => {
     <nav className={`container ${sticky ? "dark-nav" : ""}`}>
       <img src={logo} alt="" className="logo" />
       <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
-        <li>Home</li>
-        <li>Program</li>
-        <li>About Us</li>
-        <li>Campus</li>
-        <li>Testimonials</li>
-        <li>
+        <NavLink
+          to="/"
+          className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/program"
+          className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+        >
+          Program
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+        >
+          About Us
+        </NavLink>
+        <NavLink
+          to="/campus"
+          className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+        >
+          Campus
+        </NavLink>
+        {/* <NavLink
+          to="/testimonial"
+          className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+        >
+          Testimonials
+        </NavLink> */}
+        <NavLink
+          to="/contact"
+          className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+        >
           <button className="btn">contact Us</button>
-        </li>
+        </NavLink>
       </ul>
       <img src={menu_icon} alt="" className="menu-icon" onClick={toggleMenu} />
     </nav>

@@ -1,0 +1,151 @@
+.herooo{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(8,0,58,0.7),rgba(8, 0, 58, 0.7)), url('../assets/banner.png');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heroo-text h1{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.heroo-text h2{
+    font-size: 25px;
+    color: #aeaeae;
+    margin-top: 5px;
+    padding-top: 10px;
+    text-transform: none;
+}
+.heroo-text p{
+    color: #9cc4bf;
+    font-size: 20px;
+    max-width: 800px;
+    margin: 40px auto 20px;
+    padding: 10px;
+    line-height: 1.4;
+}
+.campus {
+    margin: 80px auto;
+    width: 90%;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allow the flex items to wrap */
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.gallery img {
+    width: 23%;
+    margin-bottom: 20px; /* Add a bottom margin to space out the rows */
+    border-radius: 10px;
+}
+
+/* Add this rule to ensure the spacing between images is consistent */
+.gallery img:nth-child(4n) {
+    margin-right: 0; /* Remove the right margin for every 4th image */
+}
+.enlarged-image-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .enlarged-image {
+    width: 60%;
+    margin-top: 50px; /* adjust the width to your liking */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  @media (max-width: 480px) {
+    .enlarged-image {
+      max-width: 90%; /* increase the max-width for smaller screens */
+    }
+  }
+  
+  /* For medium screens (e.g. tablet) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .enlarged-image {
+      max-width: 80%; /* adjust the max-width for medium screens */
+    }
+  }
+  
+  /* For large screens (e.g. desktop) */
+  @media (min-width: 769px) {
+    .enlarged-image {
+      max-width: 60%; /* adjust the max-width for large screens */
+    }
+  }
+
+@media (max-width: 800px){
+    .gallery{
+        flex-wrap: wrap;
+    }
+    .gallery img{
+        width: 48%;
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 992px) {
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-text h2 {
+        font-size: 20px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .herooo {
+        padding: 40px 20px; /* More padding for smaller screens */
+    }
+
+    .hero-text h1 {
+        font-size: 26px;
+    }
+
+    .hero-text h2 {
+        font-size: 18px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .hero-text h2 {
+        font-size: 16px;
+    }
+
+    .hero-text p {
+        font-size: 13px;
+    }
+    .title{
+        font-size: 25px;
+    }
+}

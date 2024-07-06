@@ -28,6 +28,7 @@
     }
     .footer ul li{
         margin: 10px auto;
+        padding-left: 9px; 
     }
     .footer p{
         margin: 10px;

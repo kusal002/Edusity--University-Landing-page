@@ -14,12 +14,19 @@ nav{
 .logo{
     width: 180px;
 }
-nav ul li{
+nav ul .nav-link{
     display: inline-block;
     list-style: none;
     margin: 5px 20px;
     font-size: 16px;
     cursor: pointer;
+}
+nav ul .nav-link:hover {
+    color: #b8b5b5;
+}
+
+nav ul .active {
+    color: #0de096;
 }
 .dark-nav{
     background: #212ea0;
@@ -28,6 +35,8 @@ nav ul li{
 .menu-icon{
     display: none;
 }
+
+
 
 /* ---Media-Query----- */
 
@@ -39,7 +48,7 @@ nav ul li{
         margin: 10px 15px;
     }
 }
-@media(max-width: 840px){
+@media(max-width: 800px){
     nav{
         padding: 15px 0;
     }
@@ -54,7 +63,7 @@ nav ul li{
         padding-top: 70px;
         transition: 0.5s;
     }
-    nav ul li{
+    nav ul .nav-link{
         display: block;
         margin: 25px 40px;
     }

@@ -1,0 +1,60 @@
+.heroo{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(8,0,58,0.7),rgba(8, 0, 58, 0.7)), url('../assets/contact.png');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text h2{
+    font-size: 32px;
+    color: #aeaeae;
+    margin-top: 5px;
+    padding-top: 10px;
+    text-transform: none;
+}
+.hero-text p{
+    color: #9cc4bf;
+    font-size: 20px;
+    max-width: 800px;
+    margin: 40px auto 20px;
+    padding: 10px;
+    line-height: 1.4;
+}
+/* .contact-info {
+    color: #c3c9cf;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-info h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+.contact-info p {
+    margin: 5px 0;
+}
+.contact-info .call-button, .contact-info .chat-button {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.contact-info .call-button {
+    background-color: #8ae233;
+}
+.contact-info .chat-button {
+    background-color: #38a9e0;
+} */

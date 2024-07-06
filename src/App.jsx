@@ -11,27 +11,7 @@ import Footer from "./Components/Footer/Footer";
 import VideoPlayer from "./Components/VideoPlayer/VideoPlayer";
 
 const App = () => {
-  const [playState, setPlayState] = useState(false);
-
-  return (
-    <div>
-      <Navbar />
-      <Hero />
-      <div className="container">
-        <Title subTitle="Our Program" title="What We Offer" />
-        <Programs />
-        <About setPlayState={setPlayState} />
-        <Title subTitle="Gallery" title="Campus Photos" />
-        <Campus />
-        <Title subTitle="TESTIMONIALS" title="What Student Says" />
-        <Testimonials />
-        <Title subTitle="CONTACT US" title="Get in Touch" />
-        <Contact />
-      </div>
-      <Footer />
-      <VideoPlayer playState={playState} setPlayState={setPlayState} />
-    </div>
-  );
+  return <div></div>;
 };
 
 export default App;
